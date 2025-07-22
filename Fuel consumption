@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+         Scanner sc= new Scanner( System.in);
+        float a = sc.nextFloat();
+        float b = sc.nextFloat();
+        float litersper100km = (a/b) * 100;
+            float miles = (b * 0.6214f);
+            float gallons = (a * 0.2642f);
+            float milespergallons= miles / gallons ;
+        if(a<=0  ||  b<=0)
+            {
+         
+             System.out.println("Invalid Input" );
+   
+            }
+      else
+         {
+       
+           System.out.printf("Liters/100KM\n%.2f\n",litersper100km);
+   System.out.printf("Miles/gallons\n%.2f\n",milespergallons);
+             }
+                          
+                       
+    
+
+    }
+}
